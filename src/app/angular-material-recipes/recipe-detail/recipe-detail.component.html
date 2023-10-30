@@ -1,0 +1,88 @@
+<mat-card class="recipe-card">
+    <mat-card-header class="recipe-header">
+        <mat-card-title> {{ recipe.title }} </mat-card-title>
+    </mat-card-header>
+
+    <button 
+        mat-button 
+        color="accent" 
+        class="edit-button" 
+        [hidden]="mode === 'View' || methodTabSelected" 
+        [routerLink]="['/edit-recipe-form', recipe.id, 'Edit', 'Title']">
+            Edit Title
+    </button>
+    
+    <button 
+        mat-button 
+        color="accent" 
+        class="edit-button" 
+        [hidden]="mode === 'View' || methodTabSelected" 
+        [routerLink]="['/edit-recipe-form', recipe.id, 'Edit', 'Image']">
+            Edit Image
+    </button>
+    <mat-card-content>  
+        <mat-tab-group 
+            mat-stretch-tabs="false" 
+            mat-align-tabs="center" 
+            (selectedTabChange)="toggleisMethodTabSelection()">
+
+            <mat-tab label="Ingredients">
+                <br>
+                <table>
+                    <tr *ngFor="let ingredient of recipe.ingredients; index as i">
+                        <td class="ingredient-quantity-row"> {{ ingredient.quantity }} {{ ingredient.measuringUnit }} </td>
+                        <td class="ingredient-name-row"> {{ ingredient.name }} </td>
+                        <td>
+                            <button mat-button color="accent" class="edit-button" [hidden]="mode === 'View'" [routerLink]="['/edit-recipe-form', recipe.id, 'Edit', 'Ingredient', { i }]">Edit</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-tab>
+            
+            <mat-tab label="Method">
+                <br>
+                <label class="cooking-time-method-label"> cooking time: {{ recipe.cookingTimeInMinutes }} mins</label>
+                <button mat-button color="accent" class="edit-button" [hidden]="mode === 'View'" [routerLink]="['/edit-recipe-form', recipe.id, 'Edit', 'CookingTimeInMinutes']">Edit</button>
+                <table>
+                    <tr *ngFor="let step of recipe.methodSteps; index as i">
+                        <td> {{ step.stepNumber }}. </td>
+                        <td> {{ step.description }} </td>
+                        <td>
+                            <button mat-button color="accent" class="edit-button" [hidden]="mode === 'View'" [routerLink]="['/edit-recipe-form', recipe.id, 'Edit', 'MethodStep', { i }]">Edit</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-tab>
+          </mat-tab-group>
+    </mat-card-content>
+    <mat-card-actions>
+        <div class="mat-action-buttons">
+            <button 
+                mat-raised-button 
+                color="accent" 
+                [hidden]="mode === 'Edit'" 
+                routerLink="/recipes" 
+                class="backButton">
+                    Back
+            </button>
+            <button 
+                mat-raised-button 
+                color="accent" 
+                [hidden]="mode === 'Edit'" 
+                (click)="toggleViewAndEditMode()">
+                    Edit Recipe
+            </button>
+            <button 
+                mat-raised-button 
+                color="accent" 
+                [hidden]="mode === 'View'" 
+                (click)="toggleViewAndEditMode()">
+                    Cancel
+            </button>
+        </div>
+        
+    </mat-card-actions>
+</mat-card>
+
+<p>mode: {{mode}}</p>
+<p>methodTabSelectionValue: {{methodTabSelected}}</p>

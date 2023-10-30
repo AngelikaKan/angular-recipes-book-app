@@ -1,0 +1,21 @@
+.middle-span-content {
+    flex: 1 1 auto;
+}
+
+.selection {
+    margin: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.toolbar-row-top {
+    min-height: 2.5em;
+    max-height: 2.5em;
+    font-size: 1.25em;
+}
+
+.toolbar-row-bottom {
+    min-height: 2.5em;
+    max-height: 2.5em;
+    font-size: 0.875em;
+}

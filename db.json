@@ -1,0 +1,392 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Omelette",
+      "cookingTimeInMinutes": 15,
+      "imageUrl": "",
+      "ingredients": [
+        { "name": "eggs", "quantity": 3, "measuringUnit": "pcs" },
+        { "name": "salt", "quantity": 1, "measuringUnit": "pinch" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Beat the eggs and the salt together."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Fry in a pan for two minutes and serve on a plate."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Bread",
+      "cookingTimeInMinutes": 60,
+      "imageUrl": "/assets/images/bread.jpg",
+      "ingredients": [
+        { "name": "flour", "quantity": 500, "measuringUnit": "g" },
+        { "name": "salt", "quantity": 5, "measuringUnit": "g" },
+        { "name": "yeast", "quantity": 3, "measuringUnit": "g" },
+        { "name": "water", "quantity": 350, "measuringUnit": "ml" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Combine dry ingredients together in a large bowl."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Add lukeworm water knead for 10 minutes until the dought is smooth."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Add lukeworm water knead for 10 minutes until the dought is smooth."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Place in a buttered tin and bake for 40 minutes"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Chocolate cake",
+      "cookingTimeInMinutes": 55,
+      "imageUrl": "/assets/images/GF_chocolate_cake.jpg",
+      "ingredients": [
+        { "name": "flour", "quantity": 200, "measuringUnit": "g" },
+        { "name": "salt", "quantity": 1, "measuringUnit": "pinch" },
+        { "name": "baking powder", "quantity": 1, "measuringUnit": "tsp" },
+        { "name": "cocoa powder", "quantity": 50, "measuringUnit": "g" },
+        { "name": "milk", "quantity": 50, "measuringUnit": "ml" },
+        { "name": "eggs", "quantity": 3, "measuringUnit": "pcs" },
+        { "name": "butter", "quantity": 125, "measuringUnit": "g" },
+        { "name": "sugar", "quantity": 200, "measuringUnit": "g" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Combine dry ingredients together in a large bowl."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Beat the butter and sugar for 5 minutes."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Add the eggs beating well after each addition."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Add the milk and dry ingredients and beat lightly until no flour is visible."
+        },
+        {
+          "stepNumber": 5,
+          "description": "Pour the dough in a prepared tin and bake for 35 minutes."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Birthday Cake",
+      "cookingTimeInMinutes": 45,
+      "imageUrl": "/assets/images/birthday_cake.jpg",
+      "ingredients": [
+        { "name": "flour", "quantity": 250, "measuringUnit": "g" },
+        { "name": "salt", "quantity": 1, "measuringUnit": "pinch" },
+        { "name": "baking powder", "quantity": 1, "measuringUnit": "tsp" },
+        { "name": "milk", "quantity": 50, "measuringUnit": "ml" },
+        { "name": "eggs", "quantity": 3, "measuringUnit": "pcs" },
+        { "name": "butter", "quantity": 400, "measuringUnit": "g" },
+        { "name": "sugar", "quantity": 400, "measuringUnit": "g" },
+        { "name": "sugar", "quantity": 400, "measuringUnit": "g" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Combine dry ingredients together in a large bowl."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Beat the 125 g of butter and 200 g sugar for 5 minutes."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Add the eggs beating well after each addition."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Add the milk and dry ingredients and beat lightly until no flour is visible."
+        },
+        {
+          "stepNumber": 5,
+          "description": "Pour the dough in a prepared tin and bake for 35 minutes."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Amaretti Biscuits",
+      "cookingTimeInMinutes": 30,
+      "imageUrl": "/assets/images/amaretti_biscuits.jpg",
+      "ingredients": [
+        { "name": "almond flour", "quantity": 180, "measuringUnit": "g" },
+        { "name": "salt", "quantity": 1, "measuringUnit": "pinch" },
+        { "name": "eggs", "quantity": 3, "measuringUnit": "pcs" },
+        { "name": "powdered sugar", "quantity": 120, "measuringUnit": "g" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Combine dry ingredients together in a large bowl."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Separate egg whites and add to dry ingredients."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Knead into a smooth, but still stick."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Add the milk and dry ingredients and beat lightly until no flour is visible."
+        },
+        {
+          "stepNumber": 5,
+          "description": "Pour the dough in a prepared tin and bake for 35 minutes."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Chicken Pie",
+      "cookingTimeInMinutes": 75,
+      "imageUrl": "/assets/images/chicken_pie.jpg",
+      "ingredients": [
+        { "name": "chicken thighs", "quantity": 2, "measuringUnit": "pcs" },
+        { "name": "salt", "quantity": 10, "measuringUnit": "g" },
+        { "name": "fresh thyme", "quantity": 3, "measuringUnit": "Tbsp" },
+        { "name": "cream", "quantity": 30, "measuringUnit": "ml" },
+        { "name": "cheddar", "quantity": 200, "measuringUnit": "g" },
+        { "name": "butter", "quantity": 125, "measuringUnit": "g" },
+        { "name": "flour", "quantity": 350, "measuringUnit": "g" },
+        { "name": "egg", "quantity": 1, "measuringUnit": "pcs" },
+        { "name": "cold water", "quantity": 30, "measuringUnit": "ml" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Roast the chicken for 20 minutes in preheated oven at 190 degrees C."
+        },
+        {
+          "stepNumber": 2,
+          "description": "When ready, let it cool down and shred it to bitesize pieces in a large bowl."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Add 5 g of salt (or to taste) and combine with cream, thyme and cheese."
+        },
+        {
+          "stepNumber": 4,
+          "description": "In a food processor, add the flour and butter and process until the butter looks like fine crumbs."
+        },
+        {
+          "stepNumber": 5,
+          "description": "Put the mixture in a bowl and add the water and egg."
+        },
+        {
+          "stepNumber": 6,
+          "description": "Knead into a smooth dough and roll it into two equal sheets."
+        },
+        {
+          "stepNumber": 7,
+          "description": "Place one of the sheets on the bottom of a pie dish and cover with the second sheet."
+        },
+        {
+          "stepNumber": 8,
+          "description": "Bake in a prepared oven at 200 degrees C for 40 minutes and serve hot."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Cheese and Ham Pie",
+      "cookingTimeInMinutes": 35,
+      "imageUrl": "/assets/images/ham_cheese_pie.jpg",
+      "ingredients": [
+        { "name": "ham", "quantity": 100, "measuringUnit": "g" },
+        { "name": "cheddar", "quantity": 200, "measuringUnit": "g" },
+        { "name": "tomato sauce", "quantity": 30, "measuringUnit": "g" },
+        { "name": "puff pastry", "quantity": 300, "measuringUnit": "g" },
+        { "name": "egg", "quantity": 1, "measuringUnit": "pcs" },
+        { "name": "butter", "quantity": 125, "measuringUnit": "g" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Roll the puff pastry more thinly and cut in two equal pieces."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Put one of the pieces in a large dish, spread the tomato sauce, top with ham and finish with the grated cheddar."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Place the remaining puff pastry on top and close around the edges to seal."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Separate the egg yolk, beat it lightly and brush the surface of the pie."
+        },
+        {
+          "stepNumber": 5,
+          "description": "Bake in preheated oven at 180 degrees C for 20 minutes."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Carrot Cake",
+      "cookingTimeInMinutes": 80,
+      "imageUrl": "/assets/images/carrot_cake.jpg",
+      "ingredients": [
+        { "name": "flour", "quantity": 300, "measuringUnit": "g" },
+        { "name": "salt", "quantity": 1, "measuringUnit": "pinch" },
+        { "name": "baking powder", "quantity": 1, "measuringUnit": "tsp" },
+        { "name": "grated carrots", "quantity": 240, "measuringUnit": "g" },
+        { "name": "eggs", "quantity": 3, "measuringUnit": "pcs" },
+        { "name": "sunflower oil", "quantity": 200, "measuringUnit": "ml" },
+        { "name": "granulated sugar", "quantity": 250, "measuringUnit": "g" },
+        { "name": "cinnamon powder", "quantity": 2, "measuringUnit": "tsp" },
+        { "name": "chopped walnuts", "quantity": 50, "measuringUnit": "g" },
+        { "name": "cream cheese", "quantity": 300, "measuringUnit": "g" },
+        { "name": "powdered sugar", "quantity": 150, "measuringUnit": "g" },
+        { "name": "vanilla extract", "quantity": 1, "measuringUnit": "tsp" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Combine dry ingredients (except for sugar) together in a large bowl."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Beat the egg, oil and granulated sugar in a large bowl."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Add the dry ingredients and mix until just incorporated."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Add the grated carrot and chopped walnuts until just combined."
+        },
+        {
+          "stepNumber": 5,
+          "description": "Pour the dough in two prepared tin and bake for 25 minutes."
+        },
+        {
+          "stepNumber": 6,
+          "description": "When ready, let them cool down for 5 minutes and put on wire rack to cool down completely."
+        },
+        {
+          "stepNumber": 7,
+          "description": "Beat the cream cheese, powdered sugar and vanilla in a large bowl until the mixture is smooth and soft."
+        },
+        {
+          "stepNumber": 8,
+          "description": "Decorate the cake with the frosting and serve."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Pancakes",
+      "cookingTimeInMinutes": 15,
+      "imageUrl": "/assets/images/GF_pancakes.jpg",
+      "ingredients": [
+        { "name": "flour", "quantity": 250, "measuringUnit": "g" },
+        { "name": "salt", "quantity": 1, "measuringUnit": "pinch" },
+        { "name": "baking powder", "quantity": 1, "measuringUnit": "tsp" },
+        { "name": "eggs", "quantity": 1, "measuringUnit": "pcs" },
+        { "name": "milk", "quantity": 200, "measuringUnit": "ml" },
+        { "name": "vanilla extract", "quantity": 1, "measuringUnit": "tsp" },
+        { "name": "melted butter", "quantity": 2, "measuringUnit": "Tbsp" },
+        { "name": "granulated sugar", "quantity": 50, "measuringUnit": "g" },
+        { "name": "maple syrup", "quantity": 50, "measuringUnit": "ml" },
+        { "name": "butter", "quantity": 50, "measuringUnit": "g" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Combine dry ingredients together in a large bowl."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Beat the egg, milk, melted butter and vanilla extract in a separate bowl."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Add the liquid ingredients to the dry ones and whisk until just incorporated."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Cook a small amount of a mixture in a non-stick pan on medium heat for about 2 minutes on each"
+        },
+        {
+          "stepNumber": 5,
+          "description": "Pour the dough in two prepared tin and bake for 25 minutes."
+        },
+        {
+          "stepNumber": 6,
+          "description": "When ready, let them cool down for 5 minutes and put on wire rack to cool down completely."
+        },
+        {
+          "stepNumber": 7,
+          "description": "Beat the cream cheese, powdered sugar and vanilla in a large bowl until the mixture is smooth and soft."
+        },
+        {
+          "stepNumber": 8,
+          "description": "Decorate the cake with the frosting and serve."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Apple Crumble",
+      "cookingTimeInMinutes": 35,
+      "imageUrl": "/assets/images/apple_crumble.jpg",
+      "ingredients": [
+        { "name": "flour", "quantity": 100, "measuringUnit": "g" },
+        { "name": "salt", "quantity": 1, "measuringUnit": "pinch" },
+        { "name": "butter", "quantity": 50, "measuringUnit": "g" },
+        { "name": "apples", "quantity": 5, "measuringUnit": "pcs" },
+        { "name": "sugar", "quantity": 100, "measuringUnit": "g" }
+      ],
+      "methodSteps": [
+        {
+          "stepNumber": 1,
+          "description": "Combine the apples and sugar in a large bowl."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Butter a dish and layer the apples on top."
+        },
+        {
+          "stepNumber": 3,
+          "description": "In another bowl, combine the flour with the butter until it resembles breadcrumbs."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Spread the dough evenly on top of the apples."
+        },
+        {
+          "stepNumber": 5,
+          "description": "Bake in a preheated oven at 180 degrees C for 20 minutes."
+        }
+      ]
+    }
+  ]
+}

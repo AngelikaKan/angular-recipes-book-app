@@ -1,0 +1,21 @@
+mat-card {
+  background-color: lightblue;
+  height: 40vh;
+  margin: 2em;
+}
+
+mat-card-title {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+mat-card-header {
+  justify-content: left;
+  align-items: center;
+  margin: 1em;
+}
+
+mat-card-content {
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}

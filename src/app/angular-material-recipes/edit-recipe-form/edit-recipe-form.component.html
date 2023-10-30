@@ -1,0 +1,131 @@
+<div class="form-container">
+  <!--TODO: check if paragraph and form need to be inside mat-card-content-->
+  <h3>Edit</h3>
+  <form [formGroup]="editRecipeForm" #form="ngForm" (ngSubmit)="onSubmit()">
+    <ng-container *ngIf="params.item === 'Title'">
+      <mat-form-field appearance="outline">
+        <input matInput placeholder="title" formControlName="title" />
+      </mat-form-field>
+    </ng-container>
+
+    <ng-container *ngIf="params.item === 'CookingTimeInMinutes'">
+      <mat-form-field>
+        <input
+          matInput
+          placeholder="Cooking time"
+          formControlName="cookingTimeInMinutes"
+        />
+      </mat-form-field>
+
+      <div
+        *ngIf="editRecipeForm.controls['cookingTimeInMinutes'].errors?.['pattern']"
+        class="inputError"
+      >
+        Enter a valid number!
+      </div>
+    </ng-container>
+
+    <ng-container
+      *ngIf="params.item === 'Ingredient'"
+      formGroupName="ingredient"
+    >
+      <mat-form-field id="qty">
+        <input matInput placeholder="quantity" formControlName="qty" />
+      </mat-form-field>
+
+      <div *ngIf="qty.errors?.['pattern']" class="inputError">
+        Please enter a valid number!
+      </div>
+
+      <mat-form-field id="meas-unit">
+        <mat-label for="meas-unit-selection"> Measuring unit </mat-label>
+        <mat-select
+          id="meas-unit-selection"
+          [(value)]="selectedMeasUnit"
+          (selectionChange)="onMeasUnitSelection()"
+        >
+          <mat-option
+            *ngFor="let option of getMeasuringUnitMembersList()"
+            [value]="option"
+          >
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field id="ingredient-name">
+        <input
+          matInput
+          placeholder="ingredient name"
+          formControlName="ingredientName"
+        />
+      </mat-form-field>
+    </ng-container>
+
+    <ng-container *ngIf="params.item === 'MethodStep'">
+      <mat-form-field>
+        <textarea
+          matInput
+          placeholder="Method step"
+          formControlName="methodStep"
+        ></textarea>
+      </mat-form-field>
+    </ng-container>
+
+    <ng-container *ngIf="params.item === 'Image'">
+      <input
+        type="file"
+        accept="image/*"
+        class="file-input"
+        (change)="onFileSelection($event)"
+        #fileInput
+        formControlName="image"
+      />
+      <button
+        mat-raised-button
+        type="button"
+        (click)="fileInput.click()"
+        class="image-button"
+      >
+        Select Image
+      </button>
+      <span class="image-caption">{{
+        image.value != "" ? image.value : "No image selected"
+      }}</span>
+    </ng-container>
+
+    <!--TODO: check if these need to go inside mat-card-action-->
+    <div class="action-buttons">
+      <button
+        mat-raised-button
+        color="accent"
+        type="submit"
+        [disabled]="isControlEmpty() || editRecipeForm.invalid"
+      >
+        Submit
+      </button>
+      <button
+        mat-button
+        color="accent"
+        type="button"
+        (click)="clearControlValue()"
+      >
+        Clear
+      </button>
+      <button mat-button color="accent" type="button" (click)="onCancel()">
+        Cancel
+      </button>
+    </div>
+
+    <p>{{ editRecipeForm.value | json }}</p>
+    <p>form is pristine: {{ editRecipeForm.pristine }}</p>
+    <p>item: {{ params.item }}</p>
+
+    <p>mode: {{ params.mode }}</p>
+    <p>itemIndex is undefined: {{ params.itemIndex === undefined }}</p>
+    <p>itemIndex: {{ params.itemIndex }}</p>
+    <p>measUnits: {{ getMeasuringUnitMembersList() }}</p>
+    <p>empty control: {{ isControlEmpty() }}</p>
+    <p>control touched: {{ image.touched }}</p>
+  </form>
+</div>

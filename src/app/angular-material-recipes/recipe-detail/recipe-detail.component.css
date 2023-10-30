@@ -1,0 +1,46 @@
+.recipe-card {
+    background-color: lightblue;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+}
+
+mat-card-title {
+    color: rgba(0, 0, 0, 0.75);
+}
+.recipe-header {
+    justify-content: center;
+}
+
+.additional-info-container {
+    text-align: right;
+}
+
+td {
+    vertical-align: top;
+}
+
+.ingredient-quantity-row, .ingredient-measuring-unit-row {
+    text-align:left;
+}
+
+.ingredient-name-row {
+    margin-left: 3px;
+}
+
+.edit-button {
+    opacity:70%;
+}
+
+.mat-action-buttons {
+    display: flex;
+}
+
+
+
+
+
+
+

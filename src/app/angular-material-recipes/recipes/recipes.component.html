@@ -1,0 +1,16 @@
+<mat-grid-list cols="4" rowHeight="4:3" gutterSize='3px'>
+    <mat-grid-tile *ngFor="let recipe of recipes" class="recipe-grid-tile">
+        <mat-card class="recipe-card">
+            <mat-card-header class="recipe-header-title">
+                <mat-card-title color="primary"> {{ recipe.title }} </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <img class="recipe-image" [src]=recipe.imageUrl alt="image not found"> 
+            </mat-card-content>
+        <mat-card-actions>
+            <!--TODO: check if button needs to be disabled when default is used due to error-->
+            <button mat-raised-button color="accent" [routerLink]="['/recipe-detail', recipe.id]">View</button>
+        </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

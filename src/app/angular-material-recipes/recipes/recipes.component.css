@@ -1,0 +1,30 @@
+mat-card-title {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.recipe-card {
+    background-color: lightblue;
+    max-width: 100%;
+    margin: 0.4em;
+}
+
+.recipe-grid-tile {
+    border-radius: 25px 25px 0px 0px;
+}
+
+.recipe-header-title {
+    justify-content: center;
+}
+
+.recipe-image {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0.3em;
+   margin-bottom: 0.4em;
+   width:50%;
+}
+
+
+
+

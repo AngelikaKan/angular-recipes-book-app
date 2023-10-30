@@ -1,0 +1,166 @@
+<div class="flex-container">
+  <div class="recipe-container">
+    <p>{{ recipe.title }}</p>
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="left">
+      <mat-tab label="Ingredients">
+        <br />
+        <table>
+          <tr *ngFor="let ingredient of recipe.ingredients">
+            <td>
+              {{ ingredient.quantity }} {{ ingredient.measuringUnit }}
+              {{ ingredient.name }}
+            </td>
+          </tr>
+        </table>
+      </mat-tab>
+
+      <mat-tab label="Method">
+        <br />
+        <label class="cooking-time-method-label">
+          cooking time: {{ recipe.cookingTimeInMinutes }} mins</label
+        >
+        <table>
+          <tr *ngFor="let step of recipe.methodSteps; index as i">
+            <td>{{ i + 1 }}.</td>
+            <td>{{ step.description }}</td>
+          </tr>
+        </table>
+      </mat-tab>
+    </mat-tab-group>
+
+    <p>{{ this.createRecipeForm.value | json }}</p>
+  </div>
+
+  <div class="form-container">
+    <form [formGroup]="createRecipeForm" #form="ngForm" ngSubmit="onSubmit()">
+      <h3 class="form-caption">Create Recipe</h3>
+      <div class="title-container">
+        <mat-form-field>
+          <input
+            matInput
+            type="text"
+            placeholder="Title"
+            formControlName="title"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="cooking-time-container">
+        <mat-form-field>
+          <input
+            matInput
+            type="text"
+            class="cooking-time-input"
+            placeholder="Cooking Time"
+            formControlName="cookingTimeInMinutes"
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="ingredient-container">
+        <p id="ingredient-caption">Add ingredient:</p>
+        <div formGroupName="ingredient" class="ingredient-form-controls">
+          <mat-form-field id="qty">
+            <input
+              matInput
+              type="text"
+              placeholder="Quantity"
+              formControlName="qty"
+            />
+          </mat-form-field>
+
+          <mat-form-field id="meas-unit">
+            <mat-label> Measuring unit </mat-label>
+            <mat-select
+              [(value)]="selectedMeasUnit"
+              (selectionChange)="onMeasUnitSelection()"
+            >
+              <mat-option
+                *ngFor="let option of getMeasuringUnitMembersList()"
+                [value]="option"
+              >
+                {{ option }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field id="ingredient-name">
+            <input
+              matInput
+              type="text"
+              placeholder="Ingredient Name"
+              formControlName="ingredientName"
+            />
+          </mat-form-field>
+        </div>
+        <div id="ingredient-button">
+          <button
+            mat-button
+            type="button"
+            class="add-button"
+            (click)="onAddIngredient()"
+          >
+            <mat-icon color="primary">add_box</mat-icon>
+          </button>
+        </div>
+      </div>
+
+      <p class="method-step-caption">Add method step:</p>
+
+      <div class="method-step-image-selection-container">
+        <div class="method-step-container">
+          <mat-form-field>
+            <textarea
+              matInput
+              type="text"
+              placeholder="Method Step"
+              formControlName="methodStep"
+            >
+            </textarea>
+          </mat-form-field>
+
+          <button
+            mat-button
+            type="button"
+            class="add-button"
+            (click)="onAddMethodStep()"
+          >
+            <mat-icon color="primary">add_box</mat-icon>
+          </button>
+        </div>
+
+        <div class="image-container">
+          <input
+            type="file"
+            accept="image/*"
+            class="image-input-control"
+            (change)="onFileSelection($event)"
+            #fileInput
+            formControlName="image"
+          />
+          <button
+            mat-raised-button
+            type="button"
+            class="image-button"
+            (click)="fileInput.click()"
+          >
+            Select Image
+          </button>
+          <span class="image-caption">
+            {{ image.value != "" ? image.value : "No image selected" }}
+          </span>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button mat-raised-button type="submit" color="accent">Submit</button>
+        <button mat-button color="accent" type="button" (click)="onClear()">
+          Clear
+        </button>
+        <button mat-button color="accent" type="button" (click)="onCancel()">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

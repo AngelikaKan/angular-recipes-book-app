@@ -1,0 +1,36 @@
+.form-container {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+}
+
+.inputError {
+  color: red;
+  margin-bottom: 1em;
+}
+
+.form-container p,
+.image-button,
+.image-caption,
+h3 {
+  font-family: Roboto;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.form-container p {
+  margin-bottom: 2em;
+}
+
+.file-input {
+  display: none;
+}
+
+.image-button {
+  margin-right: 1em;
+}
+
+.action-buttons {
+  margin-top: 2em;
+}

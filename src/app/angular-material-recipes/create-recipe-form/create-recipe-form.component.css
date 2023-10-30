@@ -1,0 +1,43 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h3, .image-button, .image-caption {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1em;;
+}
+
+.ingredient-form-controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-container, .form-container {
+    flex-grow:1;
+} 
+
+.method-step-image-selection-container {
+    display: flex;
+}
+
+.image-container input {
+    display: none;
+}
+
+.image-container button {
+    margin-right: 1em;
+}
+
+#qty, #meas-unit, #ingredient-name {
+    
+    justify-content: space-between;
+}
+
+#ingredient-button {
+    margin-left: 0;
+}
